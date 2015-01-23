@@ -463,7 +463,6 @@ def _extend_gm_classes():
 
 
       def addFunctions(self,functions):
-
         if isinstance(functions,numpy.ndarray):
           if functions.ndim==2:
             return self._addUnaryFunctions_numpy(numpy.require(functions,dtype=value_type))
